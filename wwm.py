@@ -17,6 +17,7 @@ BG_COLOR = (255,255,255)
 LINE_COLOR = (23, 145, 135)
 WIN_LINE_COLOR = (255, 255, 255)
 TEXT_COLOR = (0,0,0)
+TEXT_COLOR2 = (255,255,255)
 BUTTON_COLOR = (70, 70, 70)
 BUTTON_HOVER_COLOR = (100, 100, 100)
 
@@ -93,7 +94,7 @@ def draw_win_line(start_pos, end_pos):
 
 
 def draw_text_centered(text): #text on right side 
-    text_surface = font.render(text, True, TEXT_COLOR)
+    text_surface = font.render(text, True, TEXT_COLOR2)
     text_rect = text_surface.get_rect(center=(BOARD_WIDTH + BOARD_WIDTH // 2, 250))
     screen.blit(text_surface, text_rect)
 
